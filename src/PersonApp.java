@@ -20,6 +20,8 @@ public class PersonApp {
         System.out.println(person1.name);
         System.out.println(person1.address);
         System.out.println(person1.country);
+        // Untuk mengakses method tersebut, kita bisa menggunakan tanda titik(.) dan diikuti dengan nama methodnya. Sama seperti mengakses field
+        person1.sayHello("Budi");
 
 
 
