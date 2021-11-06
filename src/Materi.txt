@@ -50,3 +50,10 @@ Saat kita membuat kode didalam block contructor atau method di dalam class, kita
 Misal kadang kita butuh mengakses sebuah field yang namnaya sama dengan parameter method, hal ini tidak bisa dilakukan jika langsung menyebu nama field, kita bisa mengakses nama field tersebut dengan kata kunci this
 This juga tidak hanya digunakan untuk mengakses field milik object saat ini, namun juga bisa digunakan untuk mengakses method
 This bisa digunakan untuk mengatasi masalah variable shadowing
+
+============================================ Inheritance ============================================
+Inheritance atau pewarisan adalah kemampuan untuk menurunkan sebuah class ke class lain
+Dalam antrian, kita bisa membuat class parent dan class Child
+Class Child, hanya bisa punya satu class parent, namun satu class Parent bisa punya banyak class Child
+Saat sebuah class diturunkan, maka semua field dan method yang ada di class Parent, secara otomatis akan dimiliki oleh class Child
+Untuk melakukan pewarisan, di class child, kita harus menggunakan kata kunci extends lalu diikuti dengan nama class parent nya
