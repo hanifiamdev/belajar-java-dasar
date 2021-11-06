@@ -13,8 +13,8 @@ public class PersonApp {
         Untuk memanipulasi data field, sama seperti cara pada variable
         Untuk mengakses field, kita butuh kata kunci .(titik) setelah nama object dan diikuti nma fieldsnya*/
 
-        person1.name = "Hanif";
-        person1.address = "Pemalang";
+       /* person1.name = "Hanif";
+        person1.address = "Pemalang";*/
         // person1.country = "Indonesia"; // field final jadi tidak boleh diubah
 
         System.out.println(person1.name);

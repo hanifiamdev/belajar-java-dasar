@@ -15,15 +15,14 @@ public class Person {
     final String country = "Indonesia";
 
 
-    /*Constructor
+   /* Variable Shadowing
 
-    Saat kita membuat Object, maka kita seperti memanggil sebuah method, karena kita menggunakan kurung()
-    Di dalam class Java, kita bisa membantu constructor adalah method yang akan dipanggil saat pertama kali Object dibuat
-            Mirip seperti di method, kita bisa memberi parameter pada constructor
-            Nama constructor harus sama dengan nama class, dan tidak membutuhkan kata kunci void atau rreturn value*/
-    Person(String paramName, String paramAddress) {
-        name = paramName;
-        address = paramAddress;
+    Varible shadowing adalah kejadian ketika kita membuat nama variable dengan nama yang sama di scope yang menutupi variable dengan nama yang sama di scope diatasnya
+    Ini bisa terjadi seperti kita membuat nama parameter di method sama dengan nama field di class
+    Saat terjadi variable shadowing, maka secara otomatis variable scope diatasnya tidak bisa diakses*/
+    Person(String name, String addressddress) {
+        name = name; // name yang dikiri akses ke parameter name dan name yang dikanan akses ke parameter name juga sehingga tertutupi name dari field class Person
+        address = address;
     }
    /* Constructor Overloading
 
