@@ -20,9 +20,15 @@ public class Person {
     Varible shadowing adalah kejadian ketika kita membuat nama variable dengan nama yang sama di scope yang menutupi variable dengan nama yang sama di scope diatasnya
     Ini bisa terjadi seperti kita membuat nama parameter di method sama dengan nama field di class
     Saat terjadi variable shadowing, maka secara otomatis variable scope diatasnya tidak bisa diakses*/
+
+    /*This Keyword
+
+    Saat kita membuat kode didalam block contructor atau method di dalam class, kita bisa menggunakan kata kunci this untuk mengakses object saat ini
+    Misal kadang kita butuh mengakses sebuah field yang namnaya sama dengan parameter method, hal ini tidak bisa dilakukan jika langsung menyebu nama field, kita bisa mengakses nama field tersebut dengan kata kunci this
+    This juga tidak hanya digunakan untuk mengakses field milik object saat ini, namun juga bisa digunakan untuk mengakses method
+    This bisa digunakan untuk mengatasi masalah variable shadowing*/
     Person(String name, String addressddress) {
-        name = name; // name yang dikiri akses ke parameter name dan name yang dikanan akses ke parameter name juga sehingga tertutupi name dari field class Person
-        address = address;
+        this.name = name; // name yang dikiri akses ke parameter name dan name yang dikanan akses ke parameter name juga sehingga tertutupi name dari field class Person solusinya dengan keyword this
     }
    /* Constructor Overloading
 
