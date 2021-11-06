@@ -4,7 +4,7 @@ public class PersonApp {
 
         Object adalah hasil instansiasi dari sebuah class
         UNtuk membuat object kita bisa menggunakan kata kunci new, dan diikuti dengan nama class dan kurung ()*/
-        var person1 = new Person();
+        var person1 = new Person("Amrullah", "Pemalang");
 
        /* Manipulasi Field
 
@@ -26,9 +26,9 @@ public class PersonApp {
 
 
 
-        Person person2 = new Person();
+        Person person2 = new Person("Budi", "Jakarta");
         Person person3;
-        person3 = new Person();
+        person3 = new Person("Joko", "Semarang");
 
 
     }

@@ -14,6 +14,20 @@ public class Person {
     String address;
     final String country = "Indonesia";
 
+
+    /*Constructor
+
+    Saat kita membuat Object, maka kita seperti memanggil sebuah method, karena kita menggunakan kurung()
+    Di dalam class Java, kita bisa membantu constructor adalah method yang akan dipanggil saat pertama kali Object dibuat
+            Mirip seperti di method, kita bisa memberi parameter pada constructor
+            Nama constructor harus sama dengan nama class, dan tidak membutuhkan kata kunci void atau rreturn value*/
+    Person(String paramName, String paramAddress) {
+        name = paramName;
+        address = paramAddress;
+    }
+
+
+
     /*
     * ## Method ##
     *  Selain menambahkan field, kita juga bisa menambahkan method ke object
