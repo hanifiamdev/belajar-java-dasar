@@ -25,6 +25,15 @@ public class Person {
         name = paramName;
         address = paramAddress;
     }
+   /* Constructor Overloading
+
+    Sama seperti di method, di constructor kita bisa melakukan overloading
+    Kita bisa membuat contructor lebih dari satu dengan syarat tipe data parameter harus berbeda, atau jumlah parameter harus berbeda*/
+    Person(String paramName) {
+        name = paramName;
+    }
+
+    Person() {}
 
 
 
