@@ -30,10 +30,17 @@ public class Person {
     Sama seperti di method, di constructor kita bisa melakukan overloading
     Kita bisa membuat contructor lebih dari satu dengan syarat tipe data parameter harus berbeda, atau jumlah parameter harus berbeda*/
     Person(String paramName) {
-        name = paramName;
+        /*Memanggil Constructor lain
+
+        Constructor bisa memanggil constructor lain
+        Hal ini memudahkan saat kita butuh menginisialisasi data dengan berbagai kemungkinan
+        Cara untuk memeanggil constructor lain, kita hanya perlu memanggilnya seperti memanggil method, namaun dengan kata kunci this*/
+        this(paramName, null);
     }
 
-    Person() {}
+    Person() {
+        this(null);
+    }
 
 
 
