@@ -5,4 +5,8 @@ public interface Car extends HasBrand {
     void drive(); // otomatis public abstract
 
     int getTier();
+
+    default boolean isBig() {
+        return false;
+    }
 }
