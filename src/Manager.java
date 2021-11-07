@@ -1,10 +1,14 @@
-public class Manager {
+class Manager extends Employee {
 
-    String name;
+    String company;
 
-    /*Manager() {}*/ // ini constructor default(tidak memiiliki parameter) sehingga  tidak wajib bikin constructor di kelas turunannya
     Manager(String name) {
-        this.name = name;
+        super(name);
+    }
+
+    Manager(String name, String company) {
+        super(name);
+        this.company = company;
     }
 
     void sayHello(String name) {

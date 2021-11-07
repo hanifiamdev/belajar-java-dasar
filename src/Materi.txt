@@ -73,6 +73,11 @@ TIdak hanya untuk mengakses method atau field yang ada di parent class, kata kun
 Namun syaratnya untuk mengakses parent class constructor, kita harus mengakses didalam class child constructor
 JIka sebuah class parent tidak memiliki constructor yang tidak ada parameter-nya(tidak memiliki default constructor), maka class child wajib mengakses constructor class parent tersebut
 
+============================================ Polymorphism ============================================
+Polymorphism berasal dari bahasa Yunani yang berarti banyak bentuk
+Dalam OOP, Polymorphism adalah kemampuan sebuah object berubah bentuk menjadi bentuk lain
+Polymorphism erat hubungannya dengan inheritance
+
 
 
 
