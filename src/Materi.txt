@@ -116,7 +116,17 @@ private     |   Y   |    N    |     N    |   N
 Saat membuat public class, kita hanya bisa membuat 1 public class 1 file java
 Selain itu, nama public class harus sama dengan nama file
 
+============================================ Import ============================================
+Import adalah kemampuan untuk menggunakan class ayng berada di package yang berbeda
+Syarat class yang bisa digunakan jika packagenya berbeda adalah class yang harus public
 
+## Import Semua Package ##
+Jika kita ingin mengimport semua class di dalam sebuah package.
+import hanifiamdev.com.data.*
+
+## Default Import ##
+Secara default, semua class yang ada di package java.lang sudah auto import, jadi kitqa tidak perlu melakukan import secara manual
+Contoh class String, Integer, Long, Boolean, dan lain - lain terdapat package java.lang oleh karena itu, kita tidak perlu meng-import secara manual
 
 
 
