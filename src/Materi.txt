@@ -180,6 +180,14 @@ Fitur ini terjadi karena sulit untuk maintain kontrak interface jika sudah terla
 Ketika kita menambah satu method di interface, secara otomatis semua class yang implement akan rusak karena harus meng-override method tersebut
 Dengan menggunakan default method, kita bisa menambahkan konkrit method di interface
 
+============================================ ToString Method ============================================
+toString() adalah method yang terdapat di class Object
+Method ini biasanya digunakan untuk merepresentasikan object dalam bentuk String
+Secara default, toString() ini akan menghasilkan:
+    namaClass + @ + hashCode
+Namun kita bisa mengubahnya jika kita mau, agar object yang kita buat lebih mudah dibaca
+
+
 
 
 
