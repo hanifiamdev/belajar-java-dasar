@@ -205,8 +205,11 @@ Tidak mudah meng-override method hashCode, karena ada kontraknya :
     * Jika ada 2 object yang sama jika dibandingkan menggunakan method equals, maka nilai hashCodenya juga harus sama
     * Tidak wajib hashCode berbeda jika method equals menghasilkan false, karena memang keterbatasan jumlah integer sekitar 2 milyar
 
-
-
+============================================  Final Class ============================================
+Sebelumnya kita pernah menggunakan kata kunci final di java
+Jika digunakan di variable, maka variable tersebut bisa berubah lagi datanya
+Final pun bisa digunakan di class, dimana jika kita menggunakan kata kunci final sebelum class, maka kita menandakan bahwa class tersebut tidak bisa diwariskan lagi
+Secara otomatis semua class child nya akan error
 
 
 
