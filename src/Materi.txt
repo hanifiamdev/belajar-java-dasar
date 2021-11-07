@@ -140,8 +140,25 @@ Saat kita membuat sebuah abstract method kita tidak boleh membuat block method u
 Artinya, abstract method wajib di override di class child
 Abstract method tidak boleh memiliki access modifier private
 
+============================================ Getter dan Setter ============================================
+## Encapsulation ##
+Encapsulation artinya data sensitif sebuah object tersembunyi dari akses luar
+Hal ini bertujuan agar kita bisa menjaga agar data sebuah object tetap baik daan valid
+Untuk mencapai ini, biasanya kita akan membuat semua field menggunakan access modifier private, sehingga tidak bisa diakses atau diubah dari luar
+Agar bisa diubah, kita akan menyediakan method untuk mengubah dan mendapatkan field tersebut
 
+## Getter dan Setter ##
+Di java, proses encapsulation sudah dibuat standarisasinya, dimana kita bisa menggunakan Getter dan Setter method.
+Getter adalah function yang dibuat untuk mengambil data field
+Setter ada function untuk mengubah data field
 
+## Getter dan Setter Method ##
+---------------------------------------------------
+Tipe data  | Getter Method | Setter Method
+---------------------------------------------------
+boolean    |    isXxx()    | setXxx(boolean value)
+primitif   |    getXxx()   | setXxx(primitif value)
+Object     |    getXxx()   | setXxx(Object value)
 
 
 
