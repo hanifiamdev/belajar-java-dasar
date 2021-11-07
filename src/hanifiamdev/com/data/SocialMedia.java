@@ -4,8 +4,15 @@ class SocialMedia {
     String name;
 }
 
-final class Facebook extends SocialMedia {
+class Facebook extends SocialMedia {
+    final void login(String username, String password) {
 
+    }
 }
 
-//class FakeFacebook extends Facebook {}/// Tidak bisa di uanah lagi untuk class Facebook
+class FakeFacebook extends Facebook {
+
+   /* void login(String username, String password) { //ERROR -> tibak bisa di oveeride karena mehod login merupakan fianl method
+
+    }*/
+}
