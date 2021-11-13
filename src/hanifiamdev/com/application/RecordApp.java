@@ -1,5 +1,6 @@
 package hanifiamdev.com.application;
 
+/*
 import hanifiamdev.com.data.LoginRequest;
 
 public class RecordApp {
@@ -16,3 +17,4 @@ public class RecordApp {
         System.out.println(new LoginRequest("hanif", "rahasia"));
     }
 }
+*/

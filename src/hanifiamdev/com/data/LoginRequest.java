@@ -1,6 +1,6 @@
 package hanifiamdev.com.data;
 
-public record LoginRequest(String username, String password) { // hanya bisa implements, tidak bisa mealkukan extensds
+/*public record LoginRequest(String username, String password) { // hanya bisa implements, tidak bisa mealkukan extensds
 
     //ini contoh untuk default constructor
     public LoginRequest {
@@ -15,4 +15,4 @@ public record LoginRequest(String username, String password) { // hanya bisa imp
         this("", "");
     }
 
-}
+}*/

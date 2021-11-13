@@ -260,3 +260,14 @@ Saat membuat record class, secara otomatis kita meng-extends class java.lang.Rec
 Secara default constructor di record class dibuat secara otomatis, sesuai dengan definisi record class parameter
 Namun jika kita ingin melakukan sesuatu di constructor tersebut, kita bisa membuat compact constructor. yaitu constructor tanpa tanda ()
 Selain itu, kita juga bisa melakukan constructor overloading, namun ada syaratnya, yaitu constructor overloading nya harus tetap memanggil constructor utama yang secara otomatis dibuatkan di record class
+
+============================================  Enum Class ============================================
+Saat kita membuat aplikasi, kadang kita akan bertemu dengan jenis - jenis data yang nilainya terbatas
+Misal, gender, ada male dan female, atau tipe customer, ada standard, premium atau vip, dan lain-lain
+Dalam kasus seperti ini, kita bisa menggunakan enum class, yaitu class yang berisikan nilai terbatas yang sudah ditentukan
+Saat membuat enum class, secara otomatis dia akan meng-extends class java.lang.Enum, oleh karena itu class enum tidak bisa extends class lain, namun masih tetap bisa implements interface.
+
+## Enum Members ##
+Sama seperti class biasanya, di class enum pun kita bisa menambahkan members ( field, method dan contructor )
+Khusus constructor, kita tidak bisa membuat public constructor, karena memeang tujuan enum bukan untuk di instansi secara bebas
+
