@@ -305,6 +305,13 @@ Ada banyak di java yang merupakan runtime exception, seperti NullPointerExceptio
 Walaupun runtime exception tidak wajib di try-catch, tapi ada baiknya kita tetap melakukan try-catch
 karena jika terjadi runtime exception, yang ditakutkan adalah program kita berhenti
 
+============================================  Error ============================================
+Error adalah jenis exception yang terakhir
+Error adalah sebuah class di java, yang tidak direkomendasikan untuk di try-catch
+Biasanya eror terjadi ketika ada masalah serius, dan sangat tidak direkomendasikan untuk di try catch
+Artinya, direkomendasikan untuk mematikan apliaksi
+Contoh, misal jika diawal aplikasi kita tidak bisa terkoneksi ke database, direkomendasikan untuk membuat exception jenis Error, dan menghentikan aplikasi
+
 
 
 
