@@ -1,10 +1,13 @@
 package hanifiamdev.com.application;
 
+import hanifiamdev.com.annotation.Fancy;
 import hanifiamdev.com.data.MasterUser;
 import hanifiamdev.com.error.ValidationException;
 import hanifiamdev.com.util.ValidationUtil;
 
 public class ValidationApp {
+
+    @Fancy(name="ValidationApp", tags = {"application", "java"})
     public static void main(String[] args) {
         // test checked exception
         MasterUser masterUser = new MasterUser(null, "rahasia");

@@ -322,3 +322,20 @@ Cara yang paling mudah, kita bisa memanggil method printStackTrace() class Throw
 Di java 7, terdapat fitur baru yang bernama try with resource
 Try with resource adalah sebuah mekanisme agar kita lebih mudah menggunakan resource (yang wajib di close) dalam block try
 Jika kita ingin  menggunakan fitur ini, kita wajib menggunakan interface AutoCloseable
+
+============================================  Annotaion ============================================
+Annotation adalah menambahkan metadata ke kode program yang kita buat
+Tidak semua orang membutuhkan Annotation biasanya Annotation digunakan saat kita ingin membuat library / framework
+Annotation sendiri bisa diakses memnggunakan Reflection, yang akan kita bahas nanti
+Untuk membuat annotation, kita bisa menggunakan kata kunci @interface
+Annotation hanya bisa memiliki method dengan tipe data sederhana, dan bisa memiliki default value
+
+## Attribute Annotation ##
+@Target => Memberitahu annotation bisa digunakan di mana ? Class, method, field, dan lain lain
+@Retention =>  Memberitahu annotation apakah disimpen di hasil kompilasi, dan apakah bisa dibaca oleh reflection?
+
+## Predefined Annotaion ##
+Java juga sudah memiliki annotation bawaan, seperti :
+- @Override, untuk menandai bahwa method yang meng-override method parent class nya
+- @Deprecated, untuk menandai bahwa method tersebut tidak direkomendasikan lagi untuk digunakan
+- @FunctionInterface, untuk menandai bahwa class tersebut bisa dibuat sebagai lambda expression dan lain-lain
