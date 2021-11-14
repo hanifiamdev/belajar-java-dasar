@@ -1,0 +1,16 @@
+================================================================================================================
+============================================  Java Standard Classes ============================================
+================================================================================================================
+
+============================================  String Class ============================================
+Seperti yang pernah dibahas di materi Java Dasar, String adalah object, artinya dia memiliki representasi class nya
+Ada banyak sekali method yang bisa kita gunakan di String, kita bisa melihat detail method apa aja yang tersedia di halaman dokumentasi javadoc nya
+https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html
+
+## Method di String Class ##
+- String toLowerCase() => Membuat string baru dengan format lower case
+- String toUpperCase() => Membuat string baru dengan format upper case
+- int length()         => Mendapatkan panjang string
+- boolean startsWith(value) => Mengecek apakah dimulai dengan string value
+- boolean endWith(value)    => Mengecek apakah diakhiri dengan string value
+- String[] split(value)     => Memotong string dengan string value
