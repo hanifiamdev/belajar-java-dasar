@@ -6,7 +6,7 @@ import hanifiamdev.com.util.ValidationUtil;
 
 public class ValidationApp {
     public static void main(String[] args) {
-
+        // test checked exception
         MasterUser masterUser = new MasterUser(null, "rahasia");
         // try catch
         try{
@@ -27,5 +27,10 @@ public class ValidationApp {
         }finally {
             System.out.println("Selalu di eksekusi");
         }
+
+        // test runtime exception
+        MasterUser masterUser2 = new MasterUser(null, null);
+        ValidationUtil.validateRuntime(masterUser2);
+        System.out.println("Suksess");
     }
 }
