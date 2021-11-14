@@ -71,3 +71,17 @@ double tan(double) => Menghitung tan di trigonometri
 min(number 1, number 2) => Mengambil nilai terkecil
 max(number 1, number 2) => Mengambil nilai terbesar
 .. dan masih banyak lagi lainnya
+
+============================================  BigNumber Class ============================================
+Jika kita ada kebutuhan untuk menggunakan angka yang besar sehingga melebihi kapasitas Long dan Double di Java sudah disediakan class untuk handle data besar tersebut
+BigInteger adalah class untuk handle tipe data Integer, dan
+BigDecimal adalah class untuk handle tipe data floating, dan
+https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/math/package-summary.html
+
+## Method di BigInteger & BigDecimal ##
+add             => +
+subtract        => -
+multiply        => *
+divide          => /
+mod             => %
+...dan masih banyak lagi
