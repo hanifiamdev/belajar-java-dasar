@@ -34,3 +34,8 @@ StringJoiner adalah class yang bisa digunakan untuk membuat String squence yang 
 StringJoiner juga mendukung prefix dan suffix jika kita ingin menambahkannya
 Ini sangat bagus ketika ada kasus misal ingin mem-print Array dengan format yang kita mau misalnya
 https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/StringJoiner.html
+
+============================================  StringTokenizer Class ============================================
+StringTokenizer class adalah class yang bisa digunakan untuk memotong String menjadi token atau string yang lebih kecil
+Kita bisa memotong String dengan delimitir yang kita mau
+https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/StringTokenizer.html
