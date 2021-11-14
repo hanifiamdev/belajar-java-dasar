@@ -14,3 +14,17 @@ https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.ht
 - boolean startsWith(value) => Mengecek apakah dimulai dengan string value
 - boolean endWith(value)    => Mengecek apakah diakhiri dengan string value
 - String[] split(value)     => Memotong string dengan string value
+
+============================================  StringBuffer dan StringBuilder Class ============================================
+
+## Immutable String ##
+String adalah tipe data immutable, artinya tidak bisa berubah isinya, saat kita mengubah string, sebenernya yang dilakukan di java adalah membuat String baru
+Jika kita ingin manipulasi String dalam jumlah banyak, sangat tidak disarankan menggunakan String,kareana akan memakan memory yang cukup besar, untuk kasus seperti ini tidak disarankan menggunakan String,
+ksrena akan memakan memory yang cukkup besar, untuk kasus seperti ini, disarankan menggunakan StringBuffer atau StringBuilder
+
+## StringBuffer vs StringBuilder
+Kemampuan StringBuffer dan StringBuilder cukup sama, bisa digunakan untuk manipulasi String
+Yang membedakan adalah, StringBuffer itu thread safe, sedangkan StringBuilder tidak thread safe
+Jika kita ingin memanipulasi String secara paralel bersamaan, disarankan menggunakan StringBuffer, namun jika tidak butuh paralel, cukup gunakan StringBuilder
+Karena StringBuffer dibuat agar thread safe, maka secara otomatis  performanya lebih lambat dibandingkan StringBuilder\
+https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/StringBuffer.html
