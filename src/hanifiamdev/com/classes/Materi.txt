@@ -101,4 +101,15 @@ nextLong()      => Membaca long
 nextBoolean()   => Membaca boolean
 ...dan masih banyak
 
+============================================  Date & Calendar ============================================
+Tiap bahasa pemrograman biasanya memiliki representasi tanggal, di java juga sama, ada class Date & Calendar yang bisa kita gunakan sebagai representasi tanggal
+Sebenarnya di Java 8 sudah ada cara manipulasi tanggal yang baru menggunakan Java Date Time API, namun itu akan kita bahas di course terpisah
+Sekarang kita akan fokus menggunakan class Date dan Calendar
+
+## Hubungan Date dan Calendar ##
+Class Date adalah class representasi tanggal sampai presisi milisecond
+Namun di class Date sudah banyak method - method yang di depercated, sehingga untuk memanipulasi date tanggal, kita sekarang harus melakukan kombinasi antara class Date dan Calendar
+Sederhananya Date untuk representasi tanggal, dan Calendar untuk memanipulasi tanggal
+https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Date.html
+https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Calendar.html
 
