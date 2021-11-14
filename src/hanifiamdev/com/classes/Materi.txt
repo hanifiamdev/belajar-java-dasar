@@ -60,3 +60,14 @@ parseXxx(string) digunakan untuk mengkonversi dari string ke tipe data number pr
 valueOf(string) digunakan untuk mengkonversi dari string ke tipe data number non primitif
 Method ini akan throw NumberFormatException jika ternyata gagal melakukan konversi String ke number
 
+============================================  Math Class ============================================
+Class Math merupakan class utilities yang berisikan banyak sekali static method untuk operasi numerik, seperti trigonometric, logarithm, akar pangkat, dan lain-lain
+https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Math.html
+
+## Method di Math Class ##
+double cos(double) => Menghitung cos di trigonometri
+double sin(double) => Menghitung sin di trigonometri
+double tan(double) => Menghitung tan di trigonometri
+min(number 1, number 2) => Mengambil nilai terkecil
+max(number 1, number 2) => Mengambil nilai terbesar
+.. dan masih banyak lagi lainnya
