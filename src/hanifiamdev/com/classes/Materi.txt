@@ -149,3 +149,8 @@ Buat programmer web pasti tau tentang base64 yaitu encoding yang bisa digunakan 
 Aman disini bukan dari sisi security, tapi aman dari kesalahan parsing
 https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Base64.html
 https://www.ietf.org/rfc/rfc4648.txt
+
+============================================  Objects Class ============================================
+Awas jangan tertukar , ini class Objects, bukan Object
+Object adalah class utility yang berisikan banyak static method yang bisa kita gunakan untuk operasi object atau melakukan pengecekan sebelum operasinya dilakukan
+https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Objects.html
