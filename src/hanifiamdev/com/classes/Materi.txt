@@ -113,3 +113,13 @@ Sederhananya Date untuk representasi tanggal, dan Calendar untuk memanipulasi ta
 https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Date.html
 https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Calendar.html
 
+============================================  System Class ============================================
+Class System adalah class yang berisikan banyak utility static method di java, contohnya seblumnya kita sudah sering menggunakan method println milik field out di class System
+https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/System.html
+
+## Method di System Class ##
+String getenv(key)      => Mendapatkan environment variable sistem operasi
+void exit(status)       => Menghentikan program java\
+long currentTimeMilis() => Mendapatkan waktu saat ini dalam milisecond
+long nanoTIme()         => Mendapatkan waktu saat ini dalam nanosecond
+void gc()               => Menjalankan java garbage collection
