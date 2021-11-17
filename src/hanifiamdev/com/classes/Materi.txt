@@ -158,3 +158,12 @@ https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Objects.h
 ============================================  Random Class ============================================
 Random class adalah class yang bisa kita gunakan untuk meng-generate random number
 https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Random.html
+
+============================================  Properties File ============================================
+Kebanyakan aplikasi Java akan menyimpan konfigurasi file dalam bentuk properties file
+Properties file adalah file yang berisi key value yang dipisahkan dengan tanda sama dengan (=)
+Properties file bisa kita gunakan untuk menyimpan konfigurasi aplikasi kita
+
+## Properties Class ##
+Properties Class adalah class yang bisa kita gunakan untuk mengambil atau menyimpan informasi ke file properties
+https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Properties.html
