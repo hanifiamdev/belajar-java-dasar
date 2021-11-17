@@ -154,3 +154,7 @@ https://www.ietf.org/rfc/rfc4648.txt
 Awas jangan tertukar , ini class Objects, bukan Object
 Object adalah class utility yang berisikan banyak static method yang bisa kita gunakan untuk operasi object atau melakukan pengecekan sebelum operasinya dilakukan
 https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Objects.html
+
+============================================  Random Class ============================================
+Random class adalah class yang bisa kita gunakan untuk meng-generate random number
+https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/Random.html
