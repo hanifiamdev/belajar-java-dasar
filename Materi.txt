@@ -7,3 +7,19 @@ Berbeda dengan tipe data yang bisa kita gunakan di class di function, generic me
 Pengecekan ketika proses kompilasi
 Tidak perlu manual menggunakan pengecekan tipe data dan konveersi tipe data
 Memudahkan programmer membuat kode program yang generic sehingga bisa digunakan oleh berbagai tipe data
+
+======================================= Generic class =======================================
+Generic class adalah class atau interface yang memiliki parameter type
+Tidak ada ketentuan dalam pembuatan generic parameter type, namun biasanya kebanyakan orang menggunakan 1 karakter sebagai generic parameter type
+Nama generic parameter type ang bisa digunakan adalah :
+    * E - Element (biasa digunakan di collection atau struktur data)
+    * K - Key
+    * N - Number
+    * T - Type
+    * V - Value
+    * S,U,V etc. - 2nd, 3rd, 4th types
+
+## Multiiple Parameter Type ##
+Parameter type di Generic class boleh lebih dari satu
+Namun harus menggunakan nama type berbeda
+Ini sangat berguna ketika kita ingin membuat generic parameter type yang banyak
