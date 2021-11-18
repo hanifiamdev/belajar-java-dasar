@@ -10,3 +10,14 @@ Java collection telah menyediakan semuanya yang berhubungan dengan collection, s
     * Interface, ini adalah contract representasi dari collection. Semua collection di Java memiliki kontrak interface, sehingga jika kita mau, kita juga bisa membuat implementasinya sendiri
     * Implementations, tidak perlu khawatir, kita juga bisa menggunakan implementasi yang sudah dibuat oleh Java, semua interface collection sudah ada implementasi class nya di Java collection
     * Algorithms, Java juga sudah menyediakan algoritma - algoritma yang umum digunakan di collection, seperti pencarian dan pengurutan data di collection
+
+======================================== Iterable & Iterator Interface ========================================
+## Iterable Interface ##
+Iterable adalah parent untuk semua collection di Java, kecuali Map
+Iterable sendiri sangat sederhana, hanya digunakan agar mendukung for-each loop
+Karena semua collection pasti implement iterable, secara otomatis maka semua collection di Java mendukung perulangan for-each, jadi bukan cuma Array
+
+## Iterator Interface ##
+Tidak ada magic di Java, sebenarnya for-each di Iterable bisa terjadi karena ada method iterator() yang mengembalikan object iterator
+Iterator adalah interface yang mendefinisikan cara kita melakukan mengakses element di collection secara sequential
+For-each sendiri muncul sejak Java 5, sebelum Java 5 untuk melakukan iterasi collection, biasanya dilakukan manual menggunakan Iterator object
