@@ -29,3 +29,8 @@ Generic parameter type tidak hanya bisa digunakan pada class atau interface
 Kita juga bisa menggunakan generic parameter type di method
 Generic parameter type yang kita deklarasikan di method, hanya bisa diakses di method tersebut, tidak bisa digunakan di luar method
 Ini cocok jika kita ingin membuat generic method, tanpa harus mengubah deklarasi class
+
+======================================= Invariant =======================================
+Secara default, saat kita membuat generic parameter type, sifat parameter tersebut adalah Invariant
+Invariant artinya tidak boleh di subtitusi dengan subtype(child) atau supertype(parent)
+Artinya saat kita membuat object Contoh<String>, maka tidak sama dengan Contoh<Object>, begitupun sebaliknya, saat membuat object Contoh<Object>, maka tidak sama dengan Contoh<String>
