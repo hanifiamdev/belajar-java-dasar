@@ -79,6 +79,23 @@ Collections.singletonList(e)        | Membuat immutable list berisi 1 element
 Collections.unmodifiableList(list)  | Mengubah mutable list menjadi immutable
 List.of(e...)                       | Membuat immutable list dari element - element
 
+======================================== Set Interface ========================================
+Set adalah salah satu collection yang berisikan elemen-elemen yang unik, atau tidak boleh duplicate
+Set tidak memiliki index seperti di List oleh karena itu tidak ada jaminan data yang ada di Set itu akan terurut sesuai dengan waktu kita memasukkan data ke Set
+Set tidak memiliki method baru, jadi hanya menggunakan method yang ada di interface parent nya, yaitu Collection dan Iterable
+Karena tidak memiliki index, untuk mengambil data di Set juga kita harus melakukan iterasi satu per satu
 
+## Implementasi Set ##
 
-
+                                  Iterable
+                                     ^
+                                     |
+                                 Collection
+                                     ^
+                                     |
+                        EnumSet --> Set <-- HashSet <----- LinkedHashSet
+                                     ^--------------------------/
+## HashSet vs LinkedHashSet ##
+Di belakang Hashset dan LinkedHashSet sebenarnya sama - sama ada hash table, dimana data disimpan dalam sebuah hash table dengan mengkalkulasi hashCode() function
+Yang membedakan adalah, HashSet tidak menjamin data terurut sesuai dengan waktu kita menambahkan data, sedangkan LinkedHashSet menjamin data terurut sesuai dengan waktu kita menambahkan data
+Urutan data di LinkedHashSet bisa dijaga karena di belakang nya menggunakan double linked list
