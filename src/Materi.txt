@@ -27,3 +27,39 @@ Selain Iterable interface, parent class semua collection di Java adalah Collecti
 Kalo Iterable interface digunakan sebagai kontrak untuk meng-iterasi data secara sequential
 Collection merupakan kontrak untuk memanipulasi  data collection, seperti menambah, menghapus, dan mengecek isi data collection
 Tidak ada direct implementation untuk Collection, karena collection nanti akan dibagi lagi menjadi List, Set dan Queue
+
+======================================== List Interface========================================
+List adalah struktur data collection yang memiliki sifat sebagai berikut
+    * Elemen di list bisa duplikat, artinya bisa memasukkan data yang sama
+    * Data list berurut sesuai dengan posisi kita memasukkan data
+    * List memiliki index, sehingga kita bisa menggunakan nomor index untuk mendapatkan element di list
+Di java ada beberapa implementasi List, dan kita bisa memilih sesuai dengan kebutuhan kita
+
+## Implementasi List ##
+                                 Iterable
+                                     ^
+                                     |
+                                 Collection
+                                     ^
+                                     |
+                       ArrayList--> List <-- LinkedList
+
+
+## ArrayList Class ##
+ArrayList adalah implementasi dari List menggunakan array
+Default kapasitas array di ArrayList adalah 10
+Namun ketika kita memasukkan data dan array yang sudah penuh, maka secara otomatis ArrayList akan membuat array baru dengan kapasitas baru dengan ukuran kapasitas lama + data baru
+
+## LinkedList Class ##
+LinkedList adalah implementasi List dengan struktur data Double Linked List
+Bagi yang sudah belajar tentang struktur data di sekolah / kampus apa itu double linked list
+
+## ArrayList vs LinkedLIst ##
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Operasi     | ArrayList                                                             | LinkedList
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+add         | Cepat jika kapasitasnya Array masih cukup, lamabat jika sudah penuh   | Cepat karena hanya menambah node di akhir
+get         | Cepat karena tinggal digunakan index array                            | Lambat karena harus di cek dari node awal sampai ketemu index nya
+set         | Cepat karena tinggal gunakan index array                              | Lambat karena harus di cek dari node awal sampai ketemu
+remove      | Lambat karena harus menggeser data di belakang yang dihapus           | Cepat karena tinggal ubah prev dan next di node sebelah yang dihapus
+
