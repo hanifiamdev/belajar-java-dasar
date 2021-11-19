@@ -23,7 +23,7 @@ public class Person {
         return Collections.unmodifiableList(hobbies); // proteksi supaya immutable list
     }
 
-    private String getName() {
+    public String getName() {
         return name;
     }
 }

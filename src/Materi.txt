@@ -110,6 +110,38 @@ Method                              | Keterangan
 -----------------------------------------------------------------------------------------
 Collections.empty()                 | Membuat immutable set kosong
 Collections.singleton(e)            | Membuat immutable set berisi 1 element
-Collections.unmodifiableSet(list)   | Mengubah mutable set menjadi immutable
+Collections.unmodifiableSet(set)   | Mengubah mutable set menjadi immutable
 Set.of(e...)                        | Membuat immutable set dari element - element
+
+======================================== SortedSet Interface ========================================
+SortedSet adalah turunan dari Set, namun di SortedSet elemen-elemen yang dimasukkan kedalam SortedSet akan otomatis diurutkan
+Jika element adalah turunan dari interface Comparable, maka secara otomatis akan diurutkan menggunakan comparable tersebut
+Jika element bukan turunan dari interface Comparable, maka kita bisa menggunakan Comparator untuk memberi tahun si SortedSet bagaimana cara mengurutkan elemen-elemen nya
+
+## Implementasi SortedSet ##
+                                   Iterable
+                                      ^
+                                      |
+                                  Collection
+                                      ^
+                                      |
+                                     Set
+                                      ^
+                                      |
+                                  SortedSet
+                                      ^
+                                      |
+                                  NavigableSet
+                                      ^
+                                      |
+                                   TreeSet
+
+## Membuat Immutable SortedSet ##
+-----------------------------------------------------------------------------------------
+Method                                  | Keterangan
+-----------------------------------------------------------------------------------------
+Collections.emptySortedSet()            | Membuat immutable sorted set kosong
+Collections.unmodifiableSortedSet(set)  | Mengubah mutable sorted set menjadi immutable
+
+
 
