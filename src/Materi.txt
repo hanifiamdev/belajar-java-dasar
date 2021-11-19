@@ -143,5 +143,15 @@ Method                                  | Keterangan
 Collections.emptySortedSet()            | Membuat immutable sorted set kosong
 Collections.unmodifiableSortedSet(set)  | Mengubah mutable sorted set menjadi immutable
 
+======================================== NavigableSet Interface ========================================
+NavigableSet adalah turunan dari SortedSet
+NavigableSet menambah method - method untuk melakukan navigasi pencarian element, seperti mencari elemen yang lebih besar dari, kurang dari mengembalikan urutan set, dan lain - lain
+
+## Membuat Immutable NavigableSet ##
+-----------------------------------------------------------------------------------------
+Method                                  | Keterangan
+-----------------------------------------------------------------------------------------
+Collections.emptyNavigableSet()         | Membuat immutable navigable set kosong
+Collections.unmodifiableSortedSet(set)  | Mengubah mutable navigable set menjadi immutable
 
 
