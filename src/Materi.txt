@@ -99,3 +99,17 @@ Karena tidak memiliki index, untuk mengambil data di Set juga kita harus melakuk
 Di belakang Hashset dan LinkedHashSet sebenarnya sama - sama ada hash table, dimana data disimpan dalam sebuah hash table dengan mengkalkulasi hashCode() function
 Yang membedakan adalah, HashSet tidak menjamin data terurut sesuai dengan waktu kita menambahkan data, sedangkan LinkedHashSet menjamin data terurut sesuai dengan waktu kita menambahkan data
 Urutan data di LinkedHashSet bisa dijaga karena di belakang nya menggunakan double linked list
+
+======================================== Immutable Set ========================================
+Sama seperti LIst, Set pun memiliki tipe data Immutable
+Cara pembuatan immutable Set di Java mirip dengan pembuatan immutable List
+
+## Membuat Immutable Set ##
+-----------------------------------------------------------------------------------------
+Method                              | Keterangan
+-----------------------------------------------------------------------------------------
+Collections.empty()                 | Membuat immutable set kosong
+Collections.singleton(e)            | Membuat immutable set berisi 1 element
+Collections.unmodifiableSet(list)   | Mengubah mutable set menjadi immutable
+Set.of(e...)                        | Membuat immutable set dari element - element
+
