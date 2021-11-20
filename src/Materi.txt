@@ -187,7 +187,28 @@ ArrayDeque menggunakan array sebagai implementasi queue nya
 LinkedList menggunakan double linked list sebagai implementasi queue nya
 PriorityQueue menggunakan array sebagai implementasi queue nya, namun diurutkan menggunakan Comparable atau Comparator
 
+======================================== Deque Interface ========================================
+Deque singakatan dari double ended queue, artinya queue yang bisa beroprasi dari depan atau belakang
+Jika pada queue, operasi yang didukung ada FIFO, namun pada queue, tidak hanya FIFO, namun juga mendukung LIFO(Last In First Out)
+Bisa dibilang deque adalah implementasi struktur data antrian dan stack(tumpukan)
 
+## Contoh Method di Queue Interface ##
+addFirst(E a)     => Menambahkan data ke antrian terdepan, namun jika sudah mencapai kapasitasnya dia akan thrown eror IllegalStateException
+addLast(E a)      => Menambahkan data ke antrian terakhir, namun jika sudah mencapai kapasitasnya dia akan thrown eror IllegalStateException
+offerFirst(E a)   => Menambahkan data ke  terdepan, namun jika sudah mencapai kapasitasnya tidak akan error namun mengembalikan nilai false saja
+offerLast(E a)   => Menambahkan data ke antrian terakhir, namun jika sudah mencapai kapasitasnya tidak akan error namun mengembalikan nilai false saja
+dst ,,.
 
-
+## Implementasi Deque ##
+                                 Iterable
+                                     ^
+                                     |
+                                 Collection
+                                     ^
+                                     |
+                                   Queue
+                                     ^
+                                     |
+                    LinkedList --> Deque <----- ArrayDeque
+                                               
 
