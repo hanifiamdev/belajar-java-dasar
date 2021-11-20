@@ -154,4 +154,40 @@ Method                                  | Keterangan
 Collections.emptyNavigableSet()         | Membuat immutable navigable set kosong
 Collections.unmodifiableSortedSet(set)  | Mengubah mutable navigable set menjadi immutable
 
+======================================== Queue Interface ========================================
+Queue adalah Implementasi dari struktur data Antrian atau FIFO(First In First Out)
+
+## ArrayDeque vs LinkedList vs PriorityQueue ##
+ArrayDeque menggunakan array sebagai implementasi queue nya
+LinkedList menggunakan double linked list sebagai implementasi queue nya
+PriorityQueue menggunakan array sebagai implementasi queue nya, namun diurutkan menggunakan Comparable atau Comparator
+
+## Contoh Method di Queue Interface ##
+add(E a)     => Menambahkan data ke antrian, namun jika sudah mencapai kapasitasnya dia akan thrown eror IllegalStateException
+offer(E a)   => Menambahkan data ke antrian, namun jika sudah mencapai kapasitasnya tidak akan error namun mengembalikan nilai false saja
+remove()     => Ambil dan hapus data terdepan, namun jika antrian sudah kosong di remove maka akan mengembalikan eror NoSuchElementExeption
+poll()       => Ambil dan hapus data terdepan, namun jika antrian sudah kosong di remove maka tidak akan eror dan mengembalikan nilai null
+element()    => Mengambil data terdepan namun jika data sudah kosong maka akan mengembalikan eror NoSuchElementExeption
+peek()       => Mengambil data terdepan namun jika data sudah kosong maka maka tidak akan eror dan mengembalikan nilai null
+
+## Implementasi Queue ##
+                                   Iterable
+                                     ^
+                                     |
+                                 Collection
+                                     ^
+                                     |
+                 PriorityQueue --> Queue <-- Dequeue <----- LinkedList
+                                                ^   ^-------------/
+                                                |
+                                           ArrayDeque
+
+## ArrayDeque vs LinkedList vs PriorityQueue ##
+ArrayDeque menggunakan array sebagai implementasi queue nya
+LinkedList menggunakan double linked list sebagai implementasi queue nya
+PriorityQueue menggunakan array sebagai implementasi queue nya, namun diurutkan menggunakan Comparable atau Comparator
+
+
+
+
 
