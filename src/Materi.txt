@@ -252,6 +252,21 @@ EnumMap adalah implementasi Map dimana key nya adalah enum
 Karena data enum sudah pasti unik, oleh karena itu cocok dijadikan key di Map
 Algoritma pendistribusian key dioptimalkan untuk enum, sehingga lebih optimal dibandingkan menggunakan hashCode() method
 
+======================================== Immutable Map ========================================
+Sama seperti List dan Set, Map pun punya tipe data Immutable
+
+## Membuat Immutable SortedSet ##
+-----------------------------------------------------------------------------------------
+Method                                  | Keterangan
+-----------------------------------------------------------------------------------------
+Collections.emptyMap()                  | Membuat immutable map kosong
+Collections.unmodifiableMap(Map)        | Mengubah mutable map menjadi immutable
+Collections.singletonMap(key, value)    | Membuat map dengan satu jumlah key-value
+Map.of(...)                             | Membuat immutable map dari key-value
+
+
+
+
 
 
 
