@@ -210,5 +210,57 @@ dst ,,.
                                      ^
                                      |
                     LinkedList --> Deque <----- ArrayDeque
+
+======================================== Map ========================================
+## Map Interface ##
+Map adalah struktur data collection yang berisikan mapping antara key dan value
+Dimana key di map itu harus unik, tidak boleh duplikat, dan satu key cuma boleh mapping ke satu value
+Map sebenernya mirip dengan Array, cuma bedanya kalo di Array, key adalah index(Integer), sedangkan di Map, key nya bebas kita tentukan sesuai keinginan kita
+
+## Contoh Method di Map ##
+size() ( mengetahui ukuran map ). isEMpty() ( apakah kosong atau tidak ), containsKey(x) ( apakah terdapat key dengan key x atau tidak ), containsValue(x) ( apakah terdapat value x atau tidak )
+get(Object) ( mengambil data dalam map berdasarkan key ), put ( menyimpan data ke dalam map menggunakan key dan value), remove ( menghapus data didalm map berdasarkan key nya)
+keySet() ( mengambil semua key dalam suatu map ), values ( mengambil semua value dalm map ) dan masih banyak yang lainnya
+
+## Implementasi Map ##
+Implementasi Map adalah HashMap, WeakHashMap, IdentityHashMap, LinkedHashMap, EnumHashMap
+
+## HashMap ##
+HashMap adalah implementasi Map yang melakukan distribusi key menggunakan hashCode() function
+Karena HashMap sangat bergantung dengan hashCode() function, jadi pastikan kita harus membuat function function hashCode seunik mungkin, karena jika terlalu banyak nilai hashCode() yang sama, maka pendistribusian nya tidak akan optimal sehingga proses get data di Map akan semakin lambat
+Di HashMap pengecekan data duplikasi dilakukan dengan menggunakan method equals nya
+
+## WeakHashMap ##
+WeakHashMap adalah implementasi Map mirip dengan HashMap
+Yang membedakan adalah WeakHashMap menggunakan weak key, dimana jika tidak digunakan lagi maka secara otomatis data di WeakHashMap akan dihapus
+Artinya, jika terjadi garbage collection di java, bisa dimungkinkan data di WeakHashMap akan dihapus
+WeakHashMap cocok digunakan untuk menyimpan data cache di memory secara sementara
+
+## IdentityHashMap ##
+IdentityHashMap adalah implementasi Map sama seperti HashMap
+Yang membedakan adalah cara pengecekan kesamaan datanya, tidak menggunakan function equals, melainkan menggunakan operator ==(reference equality)
+Artinya data dianggap sama, jika memang lokasi di memory tersebut sama
+
+## LinkedHashMap ##
+LinkedHashMap adalah implementasi Map dengan menggunakan double linked list
+Data di LinkedHashMap akan lebih terprediksi karena datanya akan disimpan berurutan  dalam linked list sesuai urutan kita menyimpan data
+Namun perlu diperhatikan, proses get data di LinkedHashMap akan semakin lambat karena harus melakukan iterasi data linked list terlebih dahulu
+Gunakan LinkedHashMap jika memang kita lebih mementingkan iterasi dan Map nya
+
+## EnumMap ##
+EnumMap adalah implementasi Map dimana key nya adalah enum
+Karena data enum sudah pasti unik, oleh karena itu cocok dijadikan key di Map
+Algoritma pendistribusian key dioptimalkan untuk enum, sehingga lebih optimal dibandingkan menggunakan hashCode() method
+
+
+
+
+
+
+
+
+
+
+
                                                
 
