@@ -325,6 +325,19 @@ Method                                        | Keterangan
 Collections.emptyNavigableMap()               | Membuat immutable navigable kosong
 Collections.unmodifiableNavigableMap(Map)     | Mengubah mutable navigable map menjadi immutable
 
+======================================== Entry Interface ========================================
+Saat kita menyimpan data di Map, data disimpan dalam pair (key-value)
+Di java Collection, implementasi Pair di Map bernama Entry
+Entry adalah interface sederhana yang berisikan method untuk mengambil key dan value
+
+## Contoh Method di Entry Interface ##
+Object ->
+            getKey():K      => untuk mendapatkan key
+            getValue():V    => untuk mendapatkan value
+            setValue(V):V    => untuk merubah value, setKey() tidak ada karena key dalam map tidak bisa diubah
+comparingByKey(): Comparator<Entry<K, V>>    =>
+comparingByValue(): Comparator<Entry<K, V>>  =>
+dan seterusnnya
 
 
 
