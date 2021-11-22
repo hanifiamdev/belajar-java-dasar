@@ -264,6 +264,39 @@ Collections.unmodifiableMap(Map)        | Mengubah mutable map menjadi immutable
 Collections.singletonMap(key, value)    | Membuat map dengan satu jumlah key-value
 Map.of(...)                             | Membuat immutable map dari key-value
 
+======================================== SortedMap Interface ========================================
+SortedMap adalah implementasi Map dengan data key diurutkan sesuai dengan Comparable key atau bisa menggunakan Comparator
+SortedMap cocok untuk yang posisi key pada Map harus berurut
+
+## Contoh Method di SortedMap ##
+subMap( K, K )  : memotong data sortedMap sebagian data
+headMap(K)      : get data dari awal sampai key yang ditentukan sesuai parameter
+tailMap(K)      : get data dari key yang ditentukan di paramter sampai key yang paling akhir
+firsKey()       : Untuk mendapatkan key yang pertama
+lastKey()       : Untuk mendapatkan key yang terakhir
+dan seterusnya
+
+## Implementasi SortedMap ##
+                                    Map
+                                     ^
+                                     |
+                                  SortedMap
+                                     ^
+                                     |
+                                   TreeMap
+
+## Membuat Immutable SortedMap ##
+-----------------------------------------------------------------------------------------
+Method                                        | Keterangan
+-----------------------------------------------------------------------------------------
+Collections.emptySortedMap()                  | Membuat immutable sorted map kosong
+Collections.unmodifiableSortedMap(Map)        | Mengubah mutable sorted map menjadi immutable
+
+
+
+
+
+
 
 
 
