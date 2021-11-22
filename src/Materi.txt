@@ -292,7 +292,38 @@ Method                                        | Keterangan
 Collections.emptySortedMap()                  | Membuat immutable sorted map kosong
 Collections.unmodifiableSortedMap(Map)        | Mengubah mutable sorted map menjadi immutable
 
+======================================== NavigableMap Interface ========================================
+NavigableMap adalah turunan dari SortedMap
+Namun NavigableMap memiliki kemampuan navigasi berdasarkan operasi kurang dari, lebih dari dan sejenisnya
+Misal, kita ingin mengambil data yang lebih dari key x atau kurang dari key y, ini bisa dilakukan di NavigableMap
 
+## Contoh Method di NavigableMap ##
+lowerEntry(K)       : Mengambil entry yang lebih kecil dari key yang ada diparameter
+lowerKey(K)         : Mengambil key yang kurang dari parameternya
+floorEntry(K)       : Mengambil entry Kurang dari sama dengan parameternya
+floorKey(K)         : Mengambil key Kurang dari sama dengan parameternya
+ceilingEntry(K)     : Mengambil entry lebih dari sama dengan parameternya
+ceilingKey(K)       : Mengambil kay lebih dari sama dengan parameternya
+dan seterusnnya
+
+## Implementasi NavigableMap ##
+                                    Map
+                                     ^
+                                     |
+                                  SortedMap
+                                     ^
+                                     |
+                                 NavigableMap
+                                     ^
+                                     |
+                                   TreeMap
+
+## Membuat Immutable NavigableMap ##
+-----------------------------------------------------------------------------------------
+Method                                        | Keterangan
+-----------------------------------------------------------------------------------------
+Collections.emptyNavigableMap()               | Membuat immutable navigable kosong
+Collections.unmodifiableNavigableMap(Map)     | Mengubah mutable navigable map menjadi immutable
 
 
 
