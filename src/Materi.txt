@@ -401,6 +401,22 @@ void shuffle(list)                                     | Mengacak posisi element
 void swap(list, from, to)                              | Menukar posisi from ke to di list
 ...  dan masih banyak
 
+======================================== Abstract Collection ========================================
+Struktur data collection di Java selalu berkembang, namun biasanya algoritma dasarnya selalu sama antar jenis collection
+Hampir semua interface collection di Java sudah disediakan abstract class nya sebagai dasar algoritma nya, dan hampir semua implementasi class konkrit nya selalu extends abstract class collection
+Hal ini mempermudah kita, jika ingin membuat collection manual, kita tidak perlu membuat dari awal. kita bisa menggunakan abstracrt class yang sudah disediakan
+
+## Abstract Class ##
+-------------------------------------------------------------------------------------------------------------------
+Abstract Class                                         | Untuk
+-------------------------------------------------------------------------------------------------------------------
+AbstractCollection                                     | Collection
+AbstractList                                           | List
+AbstractMap                                            | Map
+AbstractQueue                                          | Queue
+AbstractSet                                            | Set
+
+
 
 
 
