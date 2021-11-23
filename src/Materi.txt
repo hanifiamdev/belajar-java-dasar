@@ -29,3 +29,8 @@ COntoh : - Interface Consumer  => jika butuh sebuah lambda dengan memberikan par
          - Interface Supplier => jika butuh sebuah lambda tanpa memberikan parameter namun butuh menerima return dari lambda tersebut
          dan masih banyak lainnya ...
 
+==================================== Method Reference ====================================
+kadang saat membuat lambda, isi lambda hanya mengakses method lain atau mengakses method lain atau mengakses method yang ada di parameter method lambda nya
+Kita bisa mempersingkat pembuatan lambda tersebut dengan method reference
+
+
