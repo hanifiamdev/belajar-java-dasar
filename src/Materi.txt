@@ -1,0 +1,16 @@
+==================================== Pengenalan Lambda ====================================
+## Apa itu Lambda? ##
+Lambda berasal dari lambda calculus, yang mengacu pada anonymous function (function tanpa nama)
+Tapi, di Java, function/method tidak bisa berdiri sendiri
+Jadi kemungkinan pada prakteknya, lambda di Java dan di bahasa pemrograman lain akan berbeda
+
+## Anonymous Class ##
+Di java kita hanya mengenal Anonymous Class
+Lambda di Java sebenarnya adalah versi sederhana membuat sebuah anonymous class
+
+## Syarat Lambda ##
+Berupa Interface
+Memiliki 1 method abstract
+Ditambahkan annotation @FunctionalIntertface di Interface
+Minimal menggunakan Java 8
+
