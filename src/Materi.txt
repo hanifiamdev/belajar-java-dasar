@@ -18,4 +18,14 @@ Minimal menggunakan Java 8
 Di materi sebelumnya kita sudah mencoba membuat lambda
 Sekarang kita bahas beberapa cara membuat lambda lainnya
 
+==================================== Package java.util.function ====================================
+Saat Java 8 keluar dengan fitur Lambda nya
+Java juga menyediakan sebuah package baru bernama java.util.function
+Package ini berisikan banyak sekali functional interface yang bisa kita gunakan untuk kebutuhan membuat lambda
+Dengan menggunakan interface - interface yang ada di package ini, kita mungkin tidak perlu lagi membuat sendiri functional interface secara manual
+COntoh : - Interface Consumer  => jika butuh sebuah lambda dengan memberikan parameter namun tidak butuh return dari lambda tersebut
+         - Interface Function  => jika butuh sebuah lambda dengan memberikan parameter dan butuh menerima return dari lambda tersebut
+         - Interface Predicate => jika butuh sebuah lambda dengan memberikan parameter dan butuh menerima return boolean(primitif) dari lambda tersebut
+         - Interface Supplier => jika butuh sebuah lambda tanpa memberikan parameter namun butuh menerima return dari lambda tersebut
+         dan masih banyak lainnya ...
 
