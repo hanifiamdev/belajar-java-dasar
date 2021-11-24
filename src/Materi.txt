@@ -39,4 +39,9 @@ Beberapa ada default method yang banyak memanfaatkan fitur lambda
 Di materi ini kita akan bahas beberapa method yang memanfaatkan Lambda
 COntoh : - Iterable.forEach  => jika butuh sebuah lambda dengan memberikan parameter namun tidak butuh return dari lambda tersebut
 
+==================================== Lambda Sebagai Lazy Parameter ====================================
+Java tidak memiliki fitur lazy seperti di bahasa pemrograman Scala
+Lazy parameter artinya, parameter tersebut hanya akan dieksekusi ketika diakses
+Untungnya, dengan menggunakan Lambda,kita bisa membuat parameter layaknya lazy parameter
+
 
