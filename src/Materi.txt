@@ -33,4 +33,10 @@ COntoh : - Interface Consumer  => jika butuh sebuah lambda dengan memberikan par
 kadang saat membuat lambda, isi lambda hanya mengakses method lain atau mengakses method lain atau mengakses method yang ada di parameter method lambda nya
 Kita bisa mempersingkat pembuatan lambda tersebut dengan method reference
 
+==================================== Lambda di Collection ====================================
+Saat fitur Lambda keluar di Java 8, ada banyak sekali default method yang ditambahkan di Java Collection
+Beberapa ada default method yang banyak memanfaatkan fitur lambda
+Di materi ini kita akan bahas beberapa method yang memanfaatkan Lambda
+COntoh : - Iterable.forEach  => jika butuh sebuah lambda dengan memberikan parameter namun tidak butuh return dari lambda tersebut
+
 
