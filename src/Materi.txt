@@ -44,4 +44,9 @@ Java tidak memiliki fitur lazy seperti di bahasa pemrograman Scala
 Lazy parameter artinya, parameter tersebut hanya akan dieksekusi ketika diakses
 Untungnya, dengan menggunakan Lambda,kita bisa membuat parameter layaknya lazy parameter
 
+==================================== Lambda di Optional Class ====================================
+Di java 8, java menyediakan sebuah class baru bernama Optional yang berada di package java.util
+Class ini digunakan sebagai wrapper untuk value yang bisa bernilai null
+Optional didesain agar kita lebih mudah ketika beroperasi dengan object yang bisa null
+Karena NullPointerException adalah salah satu hal yang sering sekali ditemui oleh programmer Java
 
